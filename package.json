@@ -2,6 +2,7 @@
   "name": "xadrez",
   "version": "1.0.0",
   "description": "CLI de xadrez com modo normal, modo as cegas e opcao de jogar contra Stockfish.",
+  "about": "Projeto desenvolvido por AndreyWBS",
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -23,7 +24,7 @@
     "stockfish",
     "terminal"
   ],
-  "author": "Andrey",
+  "author": "AndreyWBS",
   "license": "ISC",
   "engines": {
     "node": ">=18"
