@@ -1,0 +1,35 @@
+{
+  "name": "xadrez",
+  "version": "1.0.0",
+  "description": "CLI de xadrez com modo normal, modo as cegas e opcao de jogar contra Stockfish.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "xadrez": "./index.js"
+  },
+  "scripts": {
+    "start": "node .",
+    "check": "node --check index.js && node --check src/controller/GameController.js && node --check src/engine/ChessEngine.js && node --check src/player/StockfishPlayer.js && node --check src/renderer/ChessJsBoardRenderer.js && node --check src/renderer/UnicodeBoardRenderer.js && node --check src/ui/ConsoleUI.js",
+    "test": "npm run check"
+  },
+  "files": [
+    "index.js",
+    "src"
+  ],
+  "keywords": [
+    "chess",
+    "cli",
+    "xadrez",
+    "stockfish",
+    "terminal"
+  ],
+  "author": "Andrey",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "stockfish": "^18.0.7"
+  }
+}
