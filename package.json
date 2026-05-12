@@ -29,6 +29,9 @@
   "engines": {
     "node": ">=18"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "chess.js": "^1.4.0",
     "stockfish": "^18.0.7"
