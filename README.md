@@ -23,7 +23,7 @@ npm start
 ### Usando como CLI global
 
 ```bash
-npm install -g xadrez
+npm install -g xadrez-cli
 xadrez
 ```
 
@@ -124,6 +124,8 @@ Se o pacote for escopado (ex.: `@usuario/xadrez`), use:
 ```bash
 npm publish --access public
 ```
+
+[![como usar](./video/xadrez.mp4)](./video/xadrez.mp4)
 
 ## Licenca
 
