@@ -36,5 +36,12 @@ jobs:
 
       - name: Publish to npm
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          if [ -z "$NPM_TOKEN" ]; then
+            echo "Erro: NPM_TOKEN nao foi encontrado em Secrets > Actions."
+            exit 1
+          fi
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          npm whoami --registry=https://registry.npmjs.org/
           npm publish --access public
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
