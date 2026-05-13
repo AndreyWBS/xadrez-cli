@@ -164,33 +164,6 @@ Isso ajuda a popular o historico para testes de paginacao e replay.
         └── ConsoleUI.js
 ```
 
-## Publicacao no npm
-
-1. Atualize a versao no `package.json` (seguindo semver).
-2. Faca login no npm:
-
-```bash
-npm login
-```
-
-3. Verifique o conteudo que sera publicado:
-
-```bash
-npm pack --dry-run
-```
-
-4. Publique:
-
-```bash
-npm publish
-```
-
-Se o pacote for escopado (ex.: `@usuario/xadrez`), use:
-
-```bash
-npm publish --access public
-```
-
 [![como usar](./video/xadrez.gif)](./video/xadrez.gif)
 
 ## Licenca
