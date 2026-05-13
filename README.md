@@ -125,7 +125,7 @@ Se o pacote for escopado (ex.: `@usuario/xadrez`), use:
 npm publish --access public
 ```
 
-[![como usar](./video/xadrez.mp4)](./video/xadrez.mp4)
+[![como usar](./video/xadrez.gif)](./video/xadrez.gif)
 
 ## Licenca
 
