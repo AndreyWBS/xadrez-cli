@@ -30,6 +30,24 @@ export class ChessEngine {
     return history.length > 0 ? history[history.length - 1] : null;
   }
 
+  getHistory() {
+    return this.chess.history({ verbose: true });
+  }
+
+  getMoveCount() {
+    return this.chess.history().length;
+  }
+
+  loadFen(fen) {
+    this.chess.load(fen);
+  }
+
+  getWinnerColor() {
+    if (!this.chess.isCheckmate()) return null;
+    // after checkmate, chess.turn() é o lado que perdeu (está em xeque-mate)
+    return this.chess.turn() === "w" ? "b" : "w";
+  }
+
   playMove(move) {
     try {
       const result = this.chess.move(move);

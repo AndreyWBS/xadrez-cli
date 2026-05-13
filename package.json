@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "node .",
+    "seed": "node scripts/seed-games.js",
     "check": "node --check index.js && node --check src/controller/GameController.js && node --check src/engine/ChessEngine.js && node --check src/player/StockfishPlayer.js && node --check src/renderer/ChessJsBoardRenderer.js && node --check src/renderer/UnicodeBoardRenderer.js && node --check src/ui/ConsoleUI.js",
     "test": "npm run check"
   },
@@ -33,6 +34,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
+    "better-sqlite3": "^12.10.0",
     "chess.js": "^1.4.0",
     "stockfish": "^18.0.7"
   }
